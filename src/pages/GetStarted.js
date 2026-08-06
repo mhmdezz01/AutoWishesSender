@@ -8,7 +8,6 @@ function GetStarted() {
     >
       <div className="container px-3" style={{ maxWidth: "600px" }}>
         
-        {/* Header Section */}
         <div className="text-center mb-3">
           <img 
             src={fireworks} 
@@ -24,10 +23,9 @@ function GetStarted() {
           Your Partner's Birth Date
         </h1>
 
-        {/* Form Container */}
+  
         <form onSubmit={(e) => e.preventDefault()} className="w-100 mx-auto" style={{ maxWidth: "500px" }}>
           
-          {/* Date & Time Row */}
           <div className="row g-3 justify-content-center mb-3">
             <div className="col-12 col-sm-6" style={{ maxWidth: "200px" }}>
               <label className="fw-bold d-block mb-2 text-center text-sm-start">Date to send</label>
@@ -47,7 +45,6 @@ function GetStarted() {
             </div>
           </div>
 
-          {/* Name Row */}
           <div className="row g-3 mb-3">
             <div className="col-12 col-sm-6">
               <input 
@@ -69,7 +66,6 @@ function GetStarted() {
             </div>
           </div>
 
-          {/* Contact Row */}
           <div className="row g-3 mb-3">
             <div className="col-12 col-sm-6">
               <input 
@@ -91,7 +87,6 @@ function GetStarted() {
             </div>
           </div>
 
-          {/* Text Area */}
           <div className="row g-3 mb-4">
             <div className="col-12">
               <textarea 
@@ -104,7 +99,6 @@ function GetStarted() {
             </div>
           </div>
 
-          {/* Submit Button */}
           <div className="text-center">
             <button 
               onClick={() => alert("Adding your info in the History tab")} 

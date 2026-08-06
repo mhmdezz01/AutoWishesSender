@@ -28,16 +28,31 @@ function RateUs() {
       minHeight: "100vh",
       display: "flex",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
+      padding: "1rem"
     }}>
-      <div className="card my-3" style={{ maxWidth: '400px', backgroundColor:"rgb(0, 118, 0)" }}>
-        <div className="card-header text-center" style={{ fontFamily: 'Playwrite AR, cursive' }}>Rate Us !</div>
-        <div className="card-body">
-          <p className="card-text">
+      <div className="card my-3 w-100" style={{ 
+        maxWidth: '400px', 
+        backgroundColor:"rgb(0, 118, 0)",
+        margin: "0 auto"
+      }}>
+        <div className="card-header text-center" style={{ 
+          fontFamily: 'Playwrite AR, cursive',
+          fontSize: "clamp(1rem, 4vw, 1.5rem)",
+          padding: "0.75rem 0.5rem"
+        }}>
+          Rate Us !
+        </div>
+        <div className="card-body p-3 p-sm-4">
+          <p className="card-text" style={{
+            fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
+            textAlign: "center",
+            marginBottom: "0.5rem"
+          }}>
             Since we care about your experience and can't
             wait to make your event unforgettable!
           </p>
-          <div className="d-flex align-items-center gap-3 my-3">
+          <div className="d-flex align-items-center justify-content-center gap-2 gap-sm-3 my-3 flex-wrap">
             {icons.map((item) => {
               const isSelected = item.level <= activeIndex;
               
@@ -52,21 +67,41 @@ function RateUs() {
                     color: isSelected ? '#ffc107' : '#6c757d',
                     transition: 'transform 0.15s ease, color 0.15s ease',
                     transform: item.level === activeIndex ? 'scale(1.25)' : 'scale(1)',
+                    padding: "4px",
+                    minWidth: "32px",
+                    minHeight: "32px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                   title={item.label}
                 >
-                  {item.icon}
+                  <span style={{
+                    fontSize: "clamp(20px, 5vw, 28px)",
+                    lineHeight: 1,
+                    display: "flex"
+                  }}>
+                    {item.icon}
+                  </span>
                 </span>
               );
             })}
           </div>
 
-          <div className="text-center">
-            <button onClick={() => alert("Your review has been submitted and taken into consideration!")} className="btn btn-primary">
-            Submit
-          </button>
+          <div className="text-center mt-3">
+            <button 
+              onClick={() => alert("Your review has been submitted and taken into consideration!")} 
+              className="btn btn-primary"
+              style={{
+                fontSize: "clamp(0.875rem, 2vw, 1rem)",
+                padding: "0.5rem 1.5rem",
+                width: "auto",
+                minWidth: "120px"
+              }}
+            >
+              Submit
+            </button>
           </div>
-
         </div>
       </div>
     </div>

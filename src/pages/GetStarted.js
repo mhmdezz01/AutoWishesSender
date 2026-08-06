@@ -1,126 +1,82 @@
-import fireworks from "../logos/fireworks.gif";
+import { Carousel, Card, ListGroup, Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function GetStarted() {
-  return (
-    <div 
-      className="d-flex flex-column align-items-center justify-content-center min-vh-100 py-4 w-100 overflow-x-hidden" 
-      style={{ backgroundColor: "rgb(176, 118, 122)" }}
-    >
-      <div className="container px-3" style={{ maxWidth: "600px" }}>
-        
-        {/* Header Section */}
-        <div className="text-center mb-3">
-          <img 
-            src={fireworks} 
-            alt="cake Logo" 
-            style={{ maxWidth: "180px", width: "100%", height: "auto" }} 
-          />
-        </div>
-        
-        <h1 
-          className="my-3 text-center fs-2 fs-sm-1" 
-          style={{ fontFamily: 'Playwrite AR, cursive' }}
-        >
-          Your Partner's Birth Date
-        </h1>
+function Reviews() {
+  return (
+    <div style={{ 
+      backgroundColor: "rgb(255, 99, 71)", 
+      minHeight: "100vh",
+      padding: "clamp(1rem, 3vw, 2rem) 0"
+    }}>
+      <Container className="px-2 px-sm-3">
+        <Carousel variant="dark" className="position-relative pb-4">
+          
+          <Carousel.Item>
+            <div className="d-flex justify-content-center px-4">
+              <Card style={{ maxWidth: "22rem", width: "100%" }}>
+                <Card.Body>
+                  <Card.Title className="text-center">User 1</Card.Title>
+                  <Card.Text>
+                    This is a very well-designed and highly useful website.
+                    I would definitely recommend it,
+                    particularly for those who have experienced being grounded before.🥲
+                  </Card.Text>
+                </Card.Body>
+                <ListGroup variant="flush">
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Features </h6>
+                  <ListGroup.Item className="text-center"><b>Sending money via a local online WebApp</b></ListGroup.Item>
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Notes</h6>
+                  <ListGroup.Item className="text-center"><b>Nothing till now</b></ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </div>
+          </Carousel.Item>
 
-        {/* Form Container */}
-        <form onSubmit={(e) => e.preventDefault()} className="w-100 mx-auto" style={{ maxWidth: "500px" }}>
-          
-          {/* Date & Time Row */}
-          <div className="row g-3 justify-content-center mb-3">
-            <div className="col-12 col-sm-6" style={{ maxWidth: "200px" }}>
-              <label className="fw-bold d-block mb-2 text-center text-sm-start">Date to send</label>
-              <input 
-                type="date" 
-                className="form-control border-0 shadow-none text-center text-sm-start" 
-                style={{ backgroundColor: "rgb(181, 179, 255)" }} 
-              />
-            </div>
-            <div className="col-12 col-sm-6" style={{ maxWidth: "200px" }}>
-              <label className="fw-bold d-block mb-2 text-center text-sm-start">Time to send</label>
-              <input 
-                type="time" 
-                className="form-control border-0 shadow-none text-center text-sm-start" 
-                style={{ backgroundColor: "rgb(181, 179, 255)" }} 
-              />
-            </div>
-          </div>
+          <Carousel.Item>
+            <div className="d-flex justify-content-center px-4">
+              <Card style={{ maxWidth: "22rem", width: "100%" }}>
+                <Card.Body>
+                  <Card.Title className="text-center">User 2</Card.Title>
+                  <Card.Text>
+                    Decent website. Useful in some cases,
+                    but nothing extraordinary.
+                    It works fine, though I've seen better alternatives out there.
+                  </Card.Text>
+                </Card.Body>
+                <ListGroup variant="flush">
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Features </h6>
+                  <ListGroup.Item className="text-center"><b>Book a table at a well-known restaurant</b></ListGroup.Item>
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Notes</h6>
+                  <ListGroup.Item className="text-center"><b>Enhance user experience</b></ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </div>
+          </Carousel.Item>
 
-          {/* Name Row */}
-          <div className="row g-3 mb-3">
-            <div className="col-12 col-sm-6">
-              <input 
-                id="fName" 
-                type="text" 
-                placeholder="Partner's first name" 
-                className="form-control border-0 shadow-none" 
-                style={{ backgroundColor: "rgb(140, 114, 101)", color: "#fff" }} 
-              />
-            </div>
-            <div className="col-12 col-sm-6">
-              <input 
-                id="lName" 
-                type="text" 
-                placeholder="Partner's last name" 
-                className="form-control border-0 shadow-none" 
-                style={{ backgroundColor: "rgb(140, 114, 101)", color: "#fff" }} 
-              />
-            </div>
-          </div>
+          <Carousel.Item>
+            <div className="d-flex justify-content-center px-4">
+              <Card style={{ maxWidth: "22rem", width: "100%" }}>
+                <Card.Body>
+                  <Card.Title className="text-center">User 3</Card.Title>
+                  <Card.Text>
+                    Amazing website! Super user-friendly, fast, and genuinely helpful.
+                    Highly recommend it to everyone , easily one of the best I've come across!
+                  </Card.Text>
+                </Card.Body>
+                <ListGroup variant="flush">
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Features </h6>
+                  <ListGroup.Item className="text-center"><b>Plan a vacation outside your home country</b></ListGroup.Item>
+                  <h6 className="text-center mt-2" style={{ color: 'rgb(90, 90, 90)' }}>Additional Notes</h6>
+                  <ListGroup.Item className="text-center"><b>Nothing till now</b></ListGroup.Item>
+         </ListGroup>
+              </Card>
+            </div>
+          </Carousel.Item>
 
-          {/* Contact Row */}
-          <div className="row g-3 mb-3">
-            <div className="col-12 col-sm-6">
-              <input 
-                id="pNum" 
-                type="tel" 
-                placeholder="Partner's phone number" 
-                className="form-control border-0 shadow-none" 
-                style={{ backgroundColor: "rgb(140, 114, 101)", color: "#fff" }} 
-              />
-            </div>
-            <div className="col-12 col-sm-6">
-              <input 
-                id="cNum" 
-                type="tel" 
-                placeholder="Country code with no '+,0'" 
-                className="form-control border-0 shadow-none" 
-                style={{ backgroundColor: "rgb(140, 114, 101)", color: "#fff" }} 
-              />
-            </div>
-          </div>
-
-          {/* Text Area */}
-          <div className="row g-3 mb-4">
-            <div className="col-12">
-              <textarea 
-                id="tArea" 
-                rows={5} 
-                placeholder="Write Your Wish" 
-                className="form-control border-0 shadow-none" 
-                style={{ backgroundColor: "rgb(86, 164, 155)", color: "#fff" }} 
-              />
-            </div>
-          </div>
-
-          {/* Submit Button */}
-          <div className="text-center">
-            <button 
-              onClick={() => alert("Adding your info in the History tab")} 
-              className="btn border-0 shadow-none text-white fw-semibold px-4 py-2" 
-              type="submit"
-              style={{ backgroundColor: "rgb(149, 144, 205)" }}
-            >
-              Submit & Redirect
-            </button>
-          </div>
-
-        </form>
-
-      </div>
-    </div>
-  );
+        </Carousel>
+      </Container>
+    </div>
+  );
 }
 
-export default GetStarted;
+export default Reviews;

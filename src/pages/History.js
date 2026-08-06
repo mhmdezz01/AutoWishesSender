@@ -3,34 +3,44 @@ function History() {
     <div style={{ 
       backgroundColor: "rgb(255, 99, 71)", 
       minHeight: "100vh",
-      padding: "clamp(10px, 3vw, 20px)"
+      padding: "clamp(10px, 3vw, 20px)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "flex-start"
     }}>
       <div className="container" style={{ 
         paddingLeft: "clamp(5px, 2vw, 15px)",
-        paddingRight: "clamp(5px, 2vw, 15px)"
+        paddingRight: "clamp(5px, 2vw, 15px)",
+        maxWidth: "100%",
+        overflowX: "auto"
       }}>
-        <div className="d-none d-md-block">
+        {/* Desktop Table View */}
+        <div className="d-none d-md-block" style={{ width: "100%" }}>
           <table className="table" id="userTable" style={{ 
             border: "10px",
             fontSize: "clamp(0.8rem, 1.2vw, 1rem)",
             backgroundColor: "white",
             borderRadius: "8px",
-            overflow: "hidden"
+            overflow: "hidden",
+            width: "100%",
+            margin: "0 auto"
           }}>
             <thead style={{ backgroundColor: "#f8f9fa" }}>
               <tr>
-                <th style={{ padding: "clamp(8px, 1vw, 12px)" }}>First Name</th>
-                <th style={{ padding: "clamp(8px, 1vw, 12px)" }}>Last Name</th>
-                <th style={{ padding: "clamp(8px, 1vw, 12px)" }}>Phone Number</th>
-                <th style={{ padding: "clamp(8px, 1vw, 12px)" }}>Country Number</th>
-                <th style={{ padding: "clamp(8px, 1vw, 12px)" }}>Message Sent</th>
+                <th style={{ padding: "clamp(8px, 1vw, 12px)", textAlign: "center" }}>First Name</th>
+                <th style={{ padding: "clamp(8px, 1vw, 12px)", textAlign: "center" }}>Last Name</th>
+                <th style={{ padding: "clamp(8px, 1vw, 12px)", textAlign: "center" }}>Phone Number</th>
+                <th style={{ padding: "clamp(8px, 1vw, 12px)", textAlign: "center" }}>Country Number</th>
+                <th style={{ padding: "clamp(8px, 1vw, 12px)", textAlign: "center" }}>Message Sent</th>
               </tr>
             </thead>
             <tbody>
+              {/* Table data will go here */}
             </tbody>
           </table>
         </div>
 
+        {/* Mobile Card View */}
         <div className="d-md-none">
           <div className="text-center mb-3" style={{ 
             color: "white", 

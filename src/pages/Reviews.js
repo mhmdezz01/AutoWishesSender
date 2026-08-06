@@ -9,7 +9,6 @@ function Reviews() {
       padding: "clamp(1rem, 3vw, 2rem) 0"
     }}>
       <Container className="px-2 px-sm-3">
-        {/* variant="dark" makes the control arrows dark and clearly visible */}
         <Carousel variant="dark" className="position-relative pb-4">
           
           <Carousel.Item>

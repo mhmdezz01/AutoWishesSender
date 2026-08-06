@@ -3,14 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Reviews() {
   return (
-    <div style={{ 
-      backgroundColor: "rgb(255, 99, 71)", 
+    <div style={{
+      backgroundColor: "rgb(255, 99, 71)",
       minHeight: "100vh",
       padding: "clamp(1rem, 3vw, 2rem) 0"
     }}>
       <Container className="px-2 px-sm-3">
         <Carousel variant="dark" className="position-relative pb-4">
-          
+
           <Carousel.Item>
             <div className="d-flex justify-content-center px-4">
               <Card style={{ maxWidth: "22rem", width: "100%" }}>

@@ -7,7 +7,7 @@ function Home() {
                 <h1 className="text-warning" style={{
                     fontSize: "clamp(1.5rem, 6vw, 3.5rem)",
                     wordWrap: "break-word"
-                }}>Auto Birthday Wishes Sender</h1>
+                }}>Auto Birthday Wishes Sender</h1> 
                 <p className="text-danger" style={{
                     fontSize: "clamp(0.9rem, 2.5vw, 1.25rem)"
                 }}><b>Never say "I forgot" again!</b></p>

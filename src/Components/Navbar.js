@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "./logos/birthday-cake.gif";
+import logo from "../Logos/birthday-cake.gif";
 
 function Navbar() {
   return (

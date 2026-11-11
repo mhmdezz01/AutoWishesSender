@@ -1,4 +1,4 @@
-import fireworks from "../logos/fireworks.gif";
+import fireworks from "../Logos/fireworks.gif";
 
 function GetStarted() {
   return (

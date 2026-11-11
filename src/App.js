@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import GetStarted from "./pages/GetStarted";
-import RateUs from  "./pages/RateUs";
-import Reviews from  "./pages/Reviews";
-import History from  "./pages/History";
-import Home from "./Home";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import GetStarted from "./Pages/GetStarted";
+import RateUs from  "./Pages/RateUs";
+import Reviews from  "./Pages/Reviews";
+import History from  "./Pages/History";
+import Home from "./Pages/Home";
 import {Routes, Route} from "react-router-dom";
-function Project(){
+function App(){
     return(
         <div style={{fontFamily:"Times"}}>
             <Navbar/>
@@ -22,4 +22,4 @@ function Project(){
         </div>
     );
 }
-export default Project;
+export default App;
